@@ -1,0 +1,424 @@
+Acken's Minimalistic Balance Project
+ALL CHANGES ARE SUBJECT TO SUGGESTIONS AND CHANGES
+
+1.AI changes:
+-Better AI logic for great peoples.
+-The logic for the AI growth bonus (above prince) has been changed. Instead of diminishing the growth threshold it now decreases food consumption.
+-The AI should no longer use prophets to convert city if it accepted to stop spreading (untested, need testing)
+-Made the weight discount for time bigger for techs. The AI should ignore cheap techs for a lot less longer.
+-Better AI workers
+-Better CitizenAI logic (what the citizens work) and should focus more on science and culture
+-The AI should be less likely to build National wonders and 2 slot specialist buildings (guilds) in small cities
+-The AI should build more growth buildings in small cities
+-The AI should no longer sit too long (after 60 turns) on less than 4 cities.
+-The deal AI will no longer put things they value at 0 in it when asking for the AI to rebalance (horses and iron) !
+-Changed stupid AI logic for nukes (the AI basically was throwing a dice and mostly using them defensively)
+-Due to an increase in AI performance some free techs were removed on King+
+-The AI no longer has a bonus in production for projects (Apollo, Manhattan, Ship parts)
+-The AI production bonus to units has been decreased by 5% for King+
+-All difficulties AI start with 2 warrior minimum (still 3 on 7-8)
+-New AI flavors and economic flavor modifiers
+-AI units free XP has been reduced on level 7 and 8 to 20 instead of 30
+-The deal AI has got some first changes: 
+The valuation of bribe for war is now more complex and it should be harder to send away an AI that wants to kill you
+You can no longer cheat the AI by getting white peace when it wants more
+The AI should offer a white peace if it has been at war for 20 turns without any unit lost and 40 turns without any city lost (from either side).
+-The AI should be more aggressive and willing to attack city states and other civilizations:
+Improvement on AI decisiveness and Grand strategy choices
+AI much more agressive on negative opinion and more opportunistic
+The AI should now consider war against weak targets even if it is already at war
+-Changed the deal mechanic surrounding gold. The AI now apply an interest rate to humans of 15% while the Humans apply a rate of 0%.
+This mean that you can now give 30G for 1GPT but you will only get 26G if you give 1GPT.
+This has repercursions on the deal values and with additional tweak we get: Luxuries are now worth 8gpt while Strategics are worth 1gpt.
+-Completely overhauled the reckless expander diplomatic mod. It now depends on various factors (relationship, personality and approach) and return one of 4 values (new diplo texts).
+-Improved the warmonger logic:
+The negative hit now depends on relationships, distance, era, personalities. More to come.
+-Added a (for now rudimentary) casus belli hidden variable making the first city a civ conquer free of any hate if: 
+The civ was declared war upon
+A friend of the civ was declared war upon
+It also boosts the War approach so beware before stealing workers :) Text has been added in the opinion detail for it but has no direct opinion weight.
+Casus Belli has a 50turns expiration
+-Partial integration of Delnar_Ersike's Artificial Unintelligence v9
+-The AI's tech exponent (see 10.) decreases with difficulty so that the AI no longer feel too much pain for expanding like crazy (or conquering)
+-Influence from unit gifts are doubled (10 base, 20 if requested)
+-Influence when killing units a CS is at war with near borders (needs testing and the message should tell you you killed a barb for now)
+-It now takes 2 turns for a gifted unit to travel to a CS instead of 3
+-Reduced slightly the default AI era scaling bonuses (further production cost reduction, further growth reduction etc) across all King+ levels.
+-The AI no longer has any bonus for making wonders
+-Other changes
+
+2.Culture:
+More culture from the empire to help secondary policies:
+-Amphitheaters, Opera houses and Museums now give 1 more culture.
+-Great works give 4 culture and 3 tourism
+-The palace now generates 2 culture per turn
+-City states culture has been reduced (same yields than religious CS)
+-The exponent for culture cost has been reduced from 2.01 to 1.92
+-The negative effect of different ideologies has been reduced to -25%
+Note: The idea is to encourage the investment into culture and getting secondary trees. 
+Also note that Aesthetics has a pretty strong boost to tourism.
+
+3.Wide mechanics:
+-The cost of National wonders have been increased but the per city costs have been decreased. Values varries per wonder.
+-Additional cities now increase tech costs non linearily, they use a A*N^E function where A is the old penality for cities (5% for standard size), N the number of cities and E an exponent equal to 0.65.
+
+4.Warfare and units:
+-Catapults, Trebuchet, Canons now have the indirect fire promotion
+-Chariot Archers now upgrade to Crossbowmen instead of Knights
+-Pikemen now upgrades to Musketmen instead of Lancers
+-Increased defense of embarked units
+-Melee ships can now hit and run like cavalry units
+-Triplane now has a 100% (from 50%) chance of interception and the destroyer has a 50% chance of interception (from 33%)
+-Bombers now have a range of 8 from 10 (fighters are 8)
+-Triplane have a range of 6 from 5 (GWB are 6)
+-Changes to nukes:
+World congress nuke ban is available at Nuclear Fission rather than Advanced Balistics
+Nukes no longer automaticly kill everyunit on the impact tile and the same rules for damage aplly for them as for the radius
+Nuke strength one level damage (atomic bomb) is no longer 30 + rand40 + rand40 (max 110 and average 70) but 50 + rand 25 (max 75, average 62)
+Nuke strength two level damage (nuclear missile) is no longer an automatic kill but 50 + rand 25 + rand 35 (max 110, average 80)
+Nuclear missile cost is reduced to 800 instead of 1000
+Fallout probability is 35% instead of 50%
+-Penalty attacking cities for mounted units is 20% instead of 33%
+-Melee units take a bit less damage on city assault
+-Garrisoned range units get a multiplicative 20% damage boost
+-Garrisoned cities strength is increased by 25% of the unit strength instead of 20%
+-Cities have 250 health instead of 200
+-Cities are now weaker, less strength (base 8 to 7 and hill bonus 5 to 3), less heal (20 to 10). City health capture has been increased to 65%.
+-City ranged attack is reduced by 30%
+-Strength per pop is 33 instead of 40
+-The defense bonus from the palace has been slightly increased (4 instead of 2.5).
+-The probability of building capture has been slightly increased.
+-The difficulty of bullying has been adjusted for these changes, city states get a bonus of 5 to power and the maximum range is always 5. Scouts no longer count for bullying.
+-Walls, Castles, Arsenals, Military Bases give less strength(around -33%) but had their cost reduced (around -33%). Walls now give 25Health instead of 50.
+-Cities no longer make reduced damage to range units
+-All units have now access to Cover 1 right away but the effect is reduced to 25% strength against ranged attacks.
+-Ranged units have now a reduced cost of approximately 12% (-5 for archer up to -45 for bazooka)
+-Early Ranged units have had their melee strength reduced and their range strength slightly reduced:
+-Some early melee units and cavalry have had their strength increased
+-Early siege units have had their melee strength increased to make them more resistant and compensate for a lack of mobility :
+-Trireme strength was increased by 2
+-Industrial and above ranged units now have a range of 2 but their melee and ranged strengths have been reduced
+-Anti tank gun are 4 movement 60 strength but cost 350 instead of 300
+-Helicopters are 80 strength
+-Anti tank gun and helicopter vs-tank bonuses are reduced to 50%
+-Some unique units adjustments.
+-Some costs adjustment have been made to better reflect these changes
+Note that I haven't made a pass on unique units so some of them may now be pretty crazy(legion) or became bad(chu ko nu).
+
+5.Policies:
+Tradition:
+-Landed elite is now 15% growth
+-Oligarchy is now back to being a non-prereq for Legalism
+-Oligarchy now gives free defense buildings instead of stronger range attack
+Liberty:
+Purpose: Give a really quick start and allow you to more easily field a large self made empire. Reduced the strength if the left line for Liberty mixs.
+-Republic has now been swaped with Citizenship
+-Republic gives 10% to buildings
+-Liberty finisher now gives a really free great people
+
+Honor:
+Purpose: Make honor easier to use early and reward agressive styles for carving a large empire through warfare.
+-The opener now also gives culture on all kills equal to 50% the strength of the target
+-Professional Army now boosts production of experience buildings by 100% (and reduces upgrade cost)
+-Military Caste now gives +1happiness and +2culture for every barracks
+-Warrior Code gives 2 warriors and 2 units are free of maintenance. General generation is increased by 50%.
+-Discipline increases melee strength by 15% if next to an adjacent unit and gives +50% experience in combat
+-Military tradition now boosts Unit production by 15% and receive a GG. The Heroic Epic gives 4 happiness.
+-Finishing Honor gives gold on kills and boosts the production of courthouses by 50%.
+New Layout:
+	Professional Army	 Warrior Code	
+	  		|				|	  					 
+	Military Caste		  Discipline		  
+			|				|
+			Military Tradition
+Piety:
+Purpose: Make Piety reward agressive religious spread and everything related
+-The opener now also give 1 faith in the capital
+-Organized Religion now also increases the culture from Shrines and temples by 1
+-Mandate of Heaven also decreases the cost of Prophets by 20%
+-Reformation now also gives a one time bonus in the capital in production, gold and goldenage points equal to the number of followers of your religion everytime a prophet is born up to a maximum of 100 for each yield.
+-Religious Tolerance has been renamed Religious Fervor and grants 1 Happiness for every city you own that follows your own religion and for every 3 foreign cities that follow your religion.
+-Theocracy gives 15% instead of 25% bonus gold to temples but it also give 2 gold to shrines.
+-The finisher no longer boosts holy sites but gives you access to the pantheon and follower beliefs of the second most popular 
+NewLayout:
+					Organized Religion		MandateOfHeavens
+ |-------------------------	|						|
+ReligiousFervour		Theocracy					|
+							|						|
+						Reformation-----------------
+Note:The finisher uses your own followers for minimum followers checks of the other religion beleifs
+Patronage:
+-Consulates now also increases the number of personal quest you can get by 1 but the resting bonus is only 15.
+-Scholasticism now gives science based on the current era (2 to 13) per allied city states and increases TR yield with CS by 3 science.
+-Merchant confederacy now increases TR to city states by 4gold, 3 culture and increase influence by 1 per turn.
+-The finisher now also increases the speed you get new personal quests by 100% (double speed).
+
+NewLayout:
+   Philanthropy	 Consulates
+	  |			      |
+Scholasticism	   CulturalDiplomacy
+				 	  |
+				 Merchant Confederacy
+Aesthetics:
+-Cultural centers also boost Archeologist production by 50%
+-Artistic Genius also increase tourism from GW by 1
+-Fine arts now gives 1 tourism for every amphitheaters/opera house/Museums and broadcast towers and receive 50% of your happiness in culture.
+-Finisher now reveal hidden sites
+New Layout:
+CulturalCenter	FlourishingArts
+	|-------------|		|
+FineArts		ArtisticGenius
+	|
+CulturalExchange
+
+Commerce:
+-Mercenary army has been renamed "Merchant dynasties"
+-Merchant families also gives you 15% culture of every building cost you buy with gold
+-Commerce finisher also gives 1 additional trade route
+-Entrepreneurship no longer increases embarked movement (bug fix)
+-Mercantilism reduces buying costs by 15% instead of 25%
+
+Exploration:
+-Navigation School was replaced by Colonies giving +1 pop +1 worker +1happiness for newly settled cities
+-Opener now also increase embarked movement by 1
+-Naval Tradition also increase the production of Harbors, Seaports and Lighthouses by 50%
+-Merchant Navy now give 2 gold per sea buildings instead of 1
+-Treasure fleets now boosts coastal tiles without sea ressources +1prod +1gold
+-The finisher now increases naval units strength by 15%, gives a free admiral, faster admiral generation and admiral movement
+New Layout:
+NavigationSchool		MaritimeInfrastructure
+						|----------	--------|
+					Merchant Navy		NavalTradition
+							|		 	|
+							TreasureFleets
+Rationalism:
+-Rationalism is now an Industrial Era policy. 
+The purpose is to make it compete with Ideologies rather than Classical/Medieval policies
+-Rationalism opener now gives +25% generation of great scientists
+-Secularism now gives 1 science per specialist and 2 science per great person improvements.
+-Humanism now gives +10% science
+-Sovereignty now also gives +1 production to science buildings.
+-Free thought no longer give +1 science to trade posts but gives +7 science to Oxford University instead (and 17% to universities)
+New Layout
+ScientificRevolution Sovereignty  Secularism
+						|	|		|
+			   FreeThought	Humanism
+				
+Ideologies:
+Covert action now increases the chance of a coup by 15% and removes the 85% cap
+Economic Union now gives +3gold to all international trade routes
+Their Finest Hour now gives +15 strength and +50hp to all already existing cities
+Patriotic War gives +20% bonus instead of +15%
+Double Agents now gives +1 Level to all spies
+Party Leadership gives +2 to all yields instead of +1 and also include faith
+Resettlement New cities start with 3 pop and settlers production is increased by 100%
+Futurism now gives 400 tourism
+United Front no longer require to be at war with someone
+Third Alternative is 5food 5production instead of 5food 5science
+-Creative expression (+1 culture for each GW) has been replaced by Free Expression (+1 science for specialists)
+-Industrial espionage increases tech stealing by 33% instead of 100%
+
+6.Religion
+-Prophets are no longer random
+-Pantheon now cost 20 faith for everyone.
+-The cost increase with eras has been severly diminished
+-The base cost of science buildings in faith has been increased to compensate
+-The faith cost of Industrial+ era units has been greatly reduced (to make the reformation belief better).
+-Updated pantheons:
+God of Craftmen requires a minimum of 2 pop (original = 3)
+God of War now gives more faith (100% victim strength) and at 6 tiles away
+Ancestor Worship now gives 2 culture
+God King now also gives +1 food and +1 happiness
+Religious Settlement now reduce border culture cost by 25% and boosts settler production by 20%
+Dance of Aurora is no longer restricted to non-forest tundra
+Goddess of Protection now gives +5 strength to all cities
+Monuments of the gods now gives 20% production and up to Medieval wonders
+Goddess of Love now needs only 4 population
+Oral Tradition gives faith rather than culture
+Earth Mother no longer gives faith for Copper
+Religious Idol now give gold instead of culture and includes Copper
+-NewPantheons:
+Ceremonial robes gives 2 culture for dyes, cotton and silk
+Offerings to the Gods gives 1 culture and 1 faith for Truffles, Sugar and Spices
+Nature's Blessing gives 1 faith to forests
+Gift of wisdom gives 1 science to Cocoas
+-Updated Follower beliefs:
+Liturgical Drama now gives +1 faith to amphitheaters and +2 faith to opera houses
+Pagoda culture has been reduced to 1
+Cathedral culture has been increased to 2
+Ascetism no longer has a population requirement
+Choral Music now gives +2 culture to temples and +1 culture to opera houses
+Religious art gives +8 culture and +8 tourism to the hermitage (instead of +5)
+-Updated Founder beliefs:
+Tithe is now 1 gold per 5 population
+Peace Loving is now per 7 foreign followers but no longer requires peace... and has been renamed Charity Missions
+-Updated Enhancer beliefs
+Reliquary is now 75 faith per great people expended
+Missionary zeal increases missionary strength by 40% instead of 25%
+-NewReformation:
+Sacred Sites gives 1 tourism 1 culture 1 gold instead of 2 tourism
+Religious Influence allows the purchase of Operas, Museums and Broadcast towers with faith
+
+7.Wonders:
+-Himeji Castle cost has been reduced to 400
+-Artemis Temple no longer gives a great engineer point
+-Stonehenge gives 2Engineer points instead of 1point
+-Parthenon also boost the city GPP by 25%
+-Great Lighthouse gives 2Merchant points and 4 gold instead of 1 point
+-Big Ben reduces buying costs by 10% instead of 15%
+-The statue of Zeus now has a new additional effect, it reduces by half the resistance time of a newly conquered city.
+-The tower of Pisa now gives a truly free great person (this is due to the simple fix I did for Liberty so this may change back)
+-Notre Dame and forbidden palace now also have an artistic slot
+-Borobodur is now the Piety wonder
+-The great mosque is available to everyone but must be built in a holy city
+-Angkor Wat now also gives a free university and 3 culture and cost 325
+-RedFort cost is now 450 instead of 625
+-TerraCota Army now also gives 5 culture after archaeology and cost 185
+-The Pentagon now costs 800 production
+-The Kremlin now gives a flat 20% production bonus in the city instead of a bonus to armor production.
+-Wonders GPP bonuses have been added or changed.
+-Baringer Crater is now 4science 4gold
+-Grand Mesa is now 4hammer 4gold
+-Krakatoa is now 6 science and should be on the coast more often
+-Gibraltar is now 3food 6gold
+-Old Faithful is now 3science 3happiness
+-Potossi is now 12 gold and is now as common as the others
+-Solomon Mines are now as common as the others
+
+
+8.Civilizations:
+-Assyria
+Royal Library gives 15xp instead of 10xp
+Assyria receives a free great writer when discovering writing
+-Byzantium
+Dromon now available at optics, has 11 ranged strength instead of 10 and Trireme can be built by Byzantium
+The Cataphract can always be bought for 150 faith in a city with a religion, even if you don't have the tech or the appropriate belief
+-Carthage
+The African elephant now costs the same as the other horsemen UU (75) instead of 100
+Carthage gets a special free harbor in every cities called the Cothon which gives +2 gold to every sea tiles instead of +1.
+Carthage gets the same priority coastal bias as Venice
+Quinquireme strength reduced by 1 (now 14)
+Note that the Quinquireme got buffed with the Trireme making it already a very powerful early unit.
+-Rome
+The Legion strength was reduced by 1 (now 17).
+The Balista was removed.
+Rome now has a unique Amphitheater called the Forum costing no maintenance and giving +25% GPP.
+Rome UA now gives +10% building production and +15% production for buildings already existing in Capital.
+-Korea's UA only gives +1 science to specialists.
+
+9.Buildings:
+-Bombshelters are now available at atomic theory
+-Harbor gives 1 gold to all sea tiles and Seaport gives 1 hammer to all sea tiles (instead of sea ressources only)
+-Harbor increases cargo gold by 2 rather than 1
+-The Lighthouse no longer gives additional hammers (compensated by work boat buff)
+-Forge is now available at IronWorking and cost 100 instead of 120
+-Caravansary now costs 60 hammer, boost external routes by 3 gold and is available at animal husbandry
+-The east india company also gives a trade route slot
+-Police stations cost 200 production (down from 300)
+-National intelligence agency requires constabularies instead of police stations
+-Windmill, Seaport, Stadium, Recycling Center costs are reduced by 20%
+-Hospital and Medical lab cost now cost 250 and 375 respectively.
+-Pyramids cost has been reduced to 160 from 185 to be consistent with the worker cost reduction
+-The maintenance of Shrines has been removed
+-The maintenance of Temples and Watermills has been reduced to 1
+-The maintenance of Courthouse has been reduced to 3
+-StoneWorks and Windmills no longer have terrain restrictions
+-The national epic is now +4 culture instead of +1
+-The national college provides +4 science and +25% science
+-Public schools and Laboratory no longer give +3 and +4 science respectively
+-Library have gained 1 scientist slot
+-Universities now give only 1 scientific slots
+-Observatories now give +25% science instead of 50%, cost has been reduced to 160.
+-Scientists slots now give +2 science instead of +3 to put them more in line with other specialists (engineers give +2 production and merchants +4 gold)
+-Stock exchange now has only 1 slot
+-Factory now has only 1 slot
+-Workshop now has 2 slots
+-Market now has 2 slots
+-Market, bank and stock exchange give one more gold but the % modifier has been reduced to 15%
+				
+10.Technologies:
+-Removed Scientific Method as a prereq for Steam Power
+-Removed Economics as a prereq for Rifling
+-The prereqs for compass are now Philosophy and sailing
+-Infantry is now available at Combined Arms
+-Cannon has been swapped with arsenal
+-Pikeman is now available at Chivalry
+-Archery is a prerequisite to Constuction
+-Removed the Wheel prerequisite for Construction, to make composite bowmen easier to field against or with spears/swords armies
+-Tech costs have been increased by 5% per era and 5% more per era after renaissance
+-Compass increases embark movement by 1
+-Manufactories get +1 production from Chemistry, Physics, Steam Power Combustion and Robotics
+-Academies get +2 science from Printing Press, Scientific Theory, Electronics and +4 from Atomic Theory and Telecomunications
+-Custom houses get +2 gold from Economics, Refrigeration, Steam Power and Computers
+-Flight is no longer a prerequisite of Balistics (this should make AA more accessible)
+-Machinery is now a prerequisite of Gunpowder
+
+
+11.Miscelaneous:
+-Map Changes:
+-Partial integration of the NQMapScript
+-Rework of the map generator functions, inspired or copied from NQMap :
+There should be less bugs with the map scripts and I've also modified things to my liking.
+Maps are more generous than the base game in amount of ressources and luxuries (for everybody).
+Starting position should rarely be bad
+Less jungles
+Strategic balance always gives horses iron coal and oil
+-Two new mapscripts AMBalance Continents and AMBalance Pangea which are modified from NQPangea:
+More land (5% more land on standard) and sea levels have a bigger impact (58%, 66%, 74% amount of water tiles respectively).
+Less mountains on 4B and 5B and less chains, more scattered
+Islands in both scripts
+There is a smoothness parameter which is set at high by default and will create a very "round" pangea in one big lump. If set at low it will create a more sinuous Pangea or continents.
+There are two parameters for islands, numbers and size.
+The mapscript avoids creating choke points for the Pangea script
+-No limit for barb exp
+-Cargos increase route yield by 50% rather than 100%
+-Caravans and Cargos are no longer considered military units (for production bonuses)
+-High growth requirement has been reduced by reducing the exponent from 1.5 to 1.4, this should make a noticeable difference in growth after size 15+ only to help tall play
+-Prophets are now 4 movements (same as missionaries)
+-Musicians are now 6 movements, let music fly far and wide ! (helps the AI, the player has a bunch of exploits to go around that anyway)
+-Musicians can now enter enemy territory without declaring war (same reason, players could work arount it but not the AI !)
+-Salt no longer gives base gold
+-Pearls now give 3 gold
+-Increased the unit cap (20 base instead of 7)
+-CityStates should make less units long term and take less space to diminish clogging.
+-Granary now also gives +1 food to bisons
+-Mint also gives 2 gold to copper
+-GE, GS, GM no longer increase the counters of each others but GE, GM and GS specialists only give 2 points instead of 3. The first specialist now costs 75.
+-Settler difficulty has been removed, a new difficulty has been introduced between Immortal and Deity called DemiGod, level 7. All difficulties but Deity have been moved by 1. So Immortal is now level 6 etc.
+Note that the scroll list in the main menu currently doesn't show this change, only when selecting a difficulty or in the Advanced Setup !
+-Barbarian reveal ruins no longer exist
+-Merchants now yield 4gold
+-The base gold of Merchant trade missions is 500 instead of 300, the era increase is 150 instead of 100 and the influence from trade missions is 60 instead of 30.
+-Manufactories now give 5 production instead of 4
+-Customs houses now give 7 gold instead of 4
+-Academies now give 7 science instead of 8
+-Great Scientists discovery value is now fixed on creation
+-Great Writers value is now also fixed
+-Writers and Great Scientists bulbs give 7 turns worth of their yields rather than 8
+-The minimum turn for quests is now 20 instead of 30 and the randomness of quests time has been reduced (from 25 to 15)
+-Embarked visibility has been increased by 1
+-The gold yield of Trapping and Calendar luxuries has been increased by 1 (except Cocoa and Citrus).
+-The base yield of a city is always 2Food 2Hammers
+-Worker cost is now 60 and Workboat cost is now 30
+-Workboat importance has been increased to give +1F +1H 
+-The ISS project is now available at Rocketery instead of Satellites
+-The maximum discount for already known techs has been reduced from 30% to 20% (discounts due to having met civs that already have the tech)
+-Better spy rate in the later eras. Customized spy formula.
+-Spies are no longer more resistant based on level and tech differences
+-Spies with levels are now more efficient at stealing cities protected by constabularies and police station
+-Spies are more efficient at stealing if there is a big gap in tech numbers
+-Forts build time has been reduced from 800 to 600
+-Trading posts have been significantly changed:
+TP are available at The Wheel
+TP give +1 gold at Currency
+TP give +1 gold at Economics
+TP give +1 gold at Guilds
+TP can only be built adjacent to a luxury.
+-The formula for costs is no longer (P*30)^0.75 but (P*8)^0.88.
+-LumberMills can be made in Jungles
+-High Food is converted to production more efficiently when building settlers (max(0,excess-2))
+-The map reveal map is now a 5 range circle around the ruin
+-If you don't hook the required luxury fro 20 turns in a city for the We Love The King Day bonus, the luxury will be changed.
+-No longer lose trade routes after a declaration of war
+
+Added japanese translation. Courtesy of anonymous.

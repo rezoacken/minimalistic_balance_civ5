@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/10/2015 10:28:36 PM -->
+<GameData>
+	<Table name="Policy_YieldChangePerMinorTradeRoute">
+		<Column name="PolicyType" type="text" reference="Policies(Type)"/>
+		<Column name="YieldType" type="integer" reference="Yields(Type)"/>
+		<Column name="Yield" type="integer" default="0"/>
+	</Table>
+	<Table name="Policy_BuildingClassTourismChanges">
+		<Column name="PolicyType" type="text" reference="Policies(Type)"/>
+		<Column name="BuildingClassType" type="integer" reference="BuildingClasses(Type)"/>
+		<Column name="TourismChange" type="integer" default="0"/>
+	</Table>
+	<Table name="Policy_YieldChangePerSeaInternationalTradeRoute">
+		<Column name="PolicyType" type="text" reference="Policies(Type)"/>
+		<Column name="YieldType" type="integer" reference="Yields(Type)"/>
+		<Column name="Yield" type="integer" default="0"/>
+	</Table>
+</GameData>

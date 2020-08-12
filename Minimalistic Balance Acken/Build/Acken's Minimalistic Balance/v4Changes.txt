@@ -1,0 +1,99 @@
+Map changes:
+-City states now have a uniform probability of ressources (this only modify things like Sugar no longer being more common than Copper for city states)
+-City states now get a variety of 6 luxuries instead of 3 (more possible luxuries out of city states)
+-Slight reduction in fish number
+-Included NQMap v10 (which include a continents version of the NQ mod)
+
+Some changes have been made to make science scale a little less with empire size to help slow down the post renaissance game (more changes based on feedback)
+-Public schools and Laboratory no longer give +3 and +4 science respectively
+-Laboratories now have 1 scientist slots, Library have gained 1 scientist slot
+-The exponent for the tech penalty from wide play has been increased by 0.15 for the AI on king+ difficulties only
+-Scientists slots now give +2 science instead of +3 to put them more in line with other specialists (engineers give +2 production and merchants +4 gold)
+-Free thought no longer give +1 science to trade posts but gives +7 science to Oxford University instead (and 17% to universities)
+-High growth requirement has been reduced by reducing the exponent from 1.5 to 1.35, this should make a noticeable difference in growth after size 15+ only to help tall play
+-The maximum discount for already known techs has been reduced from 30% to 20% (discounts due to having met civs that already have the tech)
+-Spy rank now diminishes the chance of getting killed by a counterspy (by the same amount the counterspy increases it)
+-Tech# differences diminishes the chance of the spy getting killed
+(spy result is a number between 0 and 300, if it's above 200 you get killed. Spy ranks diminishes the number by 30 (it increases by 30 for the counterspy), and each tech you have less by 5)
+
+Misc:
+-Effect of tech on city strength has been lowered for late game cities (exponent went from 2.8 to 2.7).
+-The ISS project is now available at Rocketery instead of Satellites
+-Hospital and Medical lab cost reductions have been pushed further they now cost 250 and 375 respectively.
+-The national epic is now +3 culture instead of +1
+-Theme bonus is no longer increased by 1 (change added with the mod)
+-Pearls now give 3 gold
+-The base gold of Merchant trade missions is 500 instead of 300, the era increase is 150 instead of 100 and the influence from trade missions is 60 instead of 30.
+-The unit limit is "back" but soft. The base limit is now 20 instead of 7 making it unlikely for a human to ever reach it.
+
+Religions:
+-Feed the world is back to +1/+1.
+-Peace Loving is now per 7 foreign followers but no longer requires peace... and has been renamed Charity Missions
+-Pantheon now cost 20 faith for everyone.
+
+Policies:
+-Merchant Confederacy no longer requires Philantropy as a prerequisite (patronage)
+-Landed elite is now 15% growth
+
+Changes to coastal empires:
+-Workboat importance has been increased to give +1F +1H for improvements while the Lighthouse no longer gives additional hammers
+-Harbor gives 1 gold to all sea tiles and Seaport gives 1 hammer to all sea tiles (instead of sea ressources only)
+-Harbor increases cargo gold by 2 rather than 1
+
+Changes to nukes:
+-Bombshelters are now available at atomic theory
+-World congress nuke ban is available at Nuclear Fission rather than Advanced Balistics
+-Nukes no longer automaticly kill everyunit on the impact tile and the same rules for damage aplly for them as for the radius
+-Nuke strength one level damage (atomic bomb) is no longer 30 + rand40 + rand40 (max 110 and average 70) but 50 + rand 25 (max 75, average 62)
+-Nuke strength two level damage (nuclear missile) is no longer an automatic kill but 50 + rand 25 + rand 35 (max 110, average 80)
+-Nuclear missile cost is reduced to 800 instead of 1000
+-Fallout probability is 35% instead of 50%
+
+Units changes:
+-Melee ships can now hit and run like cavalry units
+-Riflemen are 36 (+2) strength instead of 37 (+3)
+-Triplane now has a 100% (from 50%) chance of interception and the destroyer has a 50% chance of interception (from 33%)
+-Bombers now have a range of 8 from 10 (fighters are 8)
+-Triplane have a range of 6 from 5 (GWB are 6)
+-Swordman cost 80hammer (+5). Longswordsman cost 115hammer (-5).
+-Muskets strength is now 26 (+2) down from 27 (+3)
+-Both iron melee units have now a ratio strength/cost of 0.2 while muskets have a ratio of 0.17.
+-Anti tank gun are 4 movement 60 strength but cost 350 instead of 300
+-Helicopters are 80 strength
+-Anti tank gun and helicopter vs-tank bonuses are reduced to 50%
+-Pikemen are 17 strength and cost 85 instead of 90
+-Warriors now Obsolete at IronWorking instead of Metal Casting
+-Spearman cost 60 instead of 56
+-Chariot archers cost 45 instead of 50
+-Cost increase for siege units has been reverted, Canons cost 175 instead of 180 and catapults cost 70 instead of 75
+-Knights cost 110 instead of 120
+
+AIChanges
+-The AI no longer has a bonus in production for projects (Apollo, Manhattan, Ship parts)
+-The AI production discount to units has been decreased by 5% for King+
+-Less suicide embarkations from the AI
+-Reduced some of the effects of voting on diplomacy opinions
+-Increased opinion values of Dof/Denounce and friends/ennemies 
+-The AI should no longer use prophets to convert city if it accepted to stop spreading (untested, need testing)
+-Increased the likelihood of the AI making buildings it has policy bonuses for
+-Removed a bit of code which was making the AI very unlikely to take Piety
+-Diminished random DoWs (leading to no attacks)
+-Slight reduction in AI agression toward CS
+-The gpt reduction based on happiness in lux trades with the AI has been removed (was annoying to play around with)
+-Influence from unit gifts are doubled (10 base, 20 if requested)
+-Influence when killing units a CS is at war with near borders (needs testing and the message should tell you you killed a barb for now)
+-It now takes 2 turns for a gifted unit to travel to a CS instead of 3
+
+Civilizations
+-Assyria
+Royal Library gives 15xp instead of 10xp
+Assyria receives a free great writer when discovering writing
+-Byzantium
+Dromon now available at optics, has 11 ranged strength instead of 10 and Trireme can be built by Byzantium
+The Cataphract can always be bought for 150 faith in a city with a religion, even if you don't have the tech or the appropriate belief
+
+Bugs:
+-Fixed the reformation belief not giving its bonus to prophets bought directly with faith after the industrial era or prophet spawn with policies (piety finisher)
+-Fixed a bug where Swords into Plowshares acquired with the Piety Finisher from another religion was giving growth regardless of Peace or not
+
+Added japanese translation. Courtesy of anonymous.

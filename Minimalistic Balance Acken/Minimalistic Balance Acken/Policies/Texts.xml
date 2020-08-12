@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/1/2015 11:20:29 PM -->
+<GameData>
+	<Language_en_US>
+		<Update>
+			<Where Tag="TXT_KEY_TP_CULTURE_FROM_TRAITS"/>
+			<Set Text="[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] from Trade routes."/>
+		</Update>
+		<Row Tag="TXT_KEY_CO_CITY_TOURISM_BUILDINGCLASS">
+			<Text>{1_Num} [ICON_TOURISM] Tourism from Buildings</Text>
+		</Row>
+	</Language_en_US>
+	<Language_DE_DE>
+		<Update>
+			<Where Tag="TXT_KEY_TP_CULTURE_FROM_TRAITS"/>
+			<Set Text="[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] from Trade routes."/>
+		</Update>
+		<Row Tag="TXT_KEY_CO_CITY_TOURISM_BUILDINGCLASS">
+			<Text>{1_Num} [ICON_TOURISM] Tourism from Buildings</Text>
+		</Row>
+	</Language_DE_DE>
+	<Language_PL_PL>
+		<Update>
+			<Where Tag="TXT_KEY_TP_CULTURE_FROM_TRAITS"/>
+			<Set Text="[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] from Trade routes."/>
+		</Update>
+		<Row Tag="TXT_KEY_CO_CITY_TOURISM_BUILDINGCLASS">
+			<Text>{1_Num} [ICON_TOURISM] Tourism from Buildings</Text>
+		</Row>
+	</Language_PL_PL>
+</GameData>

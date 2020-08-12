@@ -1,0 +1,19 @@
+Buildings :
+-Constabulary and Police Station give 1 happiness.
+-Caravansary gives 2 gold
+-The CN Tower give one free musician instead of pop/happiness
+-The pentagon also gives 1 free copy of your land units similarly to the terracota army
+-The terracota army now gives 3 culture instead of 1
+
+Misc :
+-SS parts no longer require alluminum (mostly an AI buff here due to AI stupidity)
+-Truly free great people
+
+AI:
+-Significant nerf to AI unit experience. They are closer to humans on Immortal and above difficulties with only 15 free and 25% bonus instead of 30free and up to 100% bonus.
+-The AI should care more or less about your lands based on its meanness stat.
+-AI will wait a bit more before pumping settlers
+
+TODO:
+-Give more modifier to AI behavior based on personality
+-WC science and military options

@@ -1,0 +1,30 @@
+Warfare
+-City strength base has been increased to 7 from 8, city strength from pop has been increased to 0.33 from 0.30
+-Chariot Archers now upgrade to Crossbowmen instead of Knights
+-Pikemen now upgrades to Musketmen instead of Lancers
+-Catapults, Trebuchet, Canons now have the indirect fire promotion
+-Catapults, Trebuchet, Canons and Artillery cost more production
+-Knights now are 21 strength
+
+Policies
+-Industrial Espionage has been reduced to 33% increased espionage speed.
+-Military tradition no longer boosts the production speed of the Heroic Epic, instead the Heroic Epic gives 4 happiness.
+-Warrior code now gives 2 warriors instead of a spearman and an archer.
+
+Misc
+-No limit for barb exp
+-Better spy rate in the later eras. Customized spy formula.
+-Some national wonder cost were reduced or how much extra cities make the cost grow
+-The cost of science and culture buildings in faith (reformation beliefs) has been increased by 33%.
+
+AI
+-AI should be a little more tolerant for other civs early expansions
+-Deceptive AIs are more likely to build an army but now the AI no longer hides whether or not it covets your land.
+-New AI flavors to encourage culture and science buildings under specific conditions (mostly city size)
+-More AI building decisions improvements
+-Slightly higher AI tech penalty exponent due to city number
+
+Fixes
+-The change to GPP generation was not working properly. GSEM specialists now give the correct 2 per specialist.
+-Removed the vanilla bug allowing to easily renew friendships on the turn it expired. The AI will now update its opinions before the player is able to send a demand.
+

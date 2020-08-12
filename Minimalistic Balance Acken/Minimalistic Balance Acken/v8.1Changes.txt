@@ -1,0 +1,3 @@
+-Reduced base unit maintenance.
+-Reduced AI train unit prod bonus by 5% across all difficulties.
+-Increased modifier for friendship to reduce the likelihood of betrayals

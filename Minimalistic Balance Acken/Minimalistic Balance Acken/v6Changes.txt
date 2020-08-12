@@ -1,0 +1,67 @@
+Policies:
+-Industrial espionage increases tech stealing by 50% instead of 100%
+-Resettlement gives 3 extra pop instead of 5
+-New Exploration tree:
+Navigation School was replaced by Colonies giving +1 pop +1 worker +1happiness for newly settled cities
+Treasure fleets now boosts coastal tiles without sea ressources +1prod +1gold
+Both of these policies are based on the work of Fruitstrike for the NQMod so thank him and visit his mod.
+The free admiral, more admiral movement and faster admiral generation are now in the finisher. The boost to naval strength has been decreased to 10%..
+Naval tradition only boosts the buildings production by 50% instead of 100%
+
+Warfare:
+-Cities have 250 health instead of 200
+-Melee units take a bit less damage on city assault
+-Captured cities have 65% health instead of 75%
+-Pictish Warrior, Mandekalu Cavalry have +1 strength
+-Increased defense of embarked units
+
+Misc:
+-GE, GS, GM no longer increase the counters of each others but GE, GM and GS specialists only give 2 points instead of 3. The first specialist now costs 75.
+-Guilds increase gold from trading posts by 1 to preserve for a total of +4G at Economics, staying in line with +2 hammer at chemistry/scientific.
+-Caravan food was reverted back to its orignal values
+-Spies are no longer more resistant based on level and tech differences
+-Spies with levels are now more efficient at stealing cities protected by constabularies and police station
+-Spies are more efficient at stealing if there is a big gap in tech numbers
+-High Food is converted to production more efficiently when building settlers (max(0,excess-2))
+-The map reveal map is now a 5 range circle around the ruin
+-If you don't hook the required luxury fro 20 turns in a city for the We Love The King Day bonus, the luxury will be changed.
+-Reverted nuclear plant changes
+-No longer lose trade routes after a declaration of war
+
+AI:
+-Tweaks
+-The AI should neglect Rationalism less
+-Boosted number of units used by AI for defense a bit
+-Increased maximum number of units to CS
+-The logic for the AI growth bonus (above prince) has been changed. Instead of diminishing the growth threshold it now decreases food consumption.
+-Increased AI tech penalty for cities slightly
+-Reduced slightly the default AI era scaling bonuses (further production cost reduction, further growth reduction etc) across all King+ levels.
+-The AI no longer has any bonus for making wonders
+
+Techs:
+-Manufactories get +1 production from Chemistry, Physics, Steam Power Combustion and Robotics
+-Academies get +2 science from Printing Press, Scientific Theory, Electronics and +4 from Atomic Theory and Telecomunications
+-Custom houses get +2 gold from Economics, Refrigeration, Steam Power and Computers
+-Slight increase of the tech ramp cost
+-Machinery is now a prerequisite of Gunpowder
+-Flight is no longer a prerequisite of Balistics (this should make AA more accessible)
+
+Wonders:
+-Artemis Temple no longer gives a great engineer point
+-Stonehenge gives 2Engineer points instead of 1point
+-Parthenon also boost the city GPP by 25%
+-Great Lighthouse gives 2Merchant points and 4 gold instead of 1 point
+-Terracota cost reduced to 185
+-Angkor Wat cost has been reduced to 325
+-Himeji Castle cost has been reduced to 400
+
+Maps:
+-More sea oil and alluminum
+-More randomness in the amount of strategics a tile provides (more 2-3 horses, less 4 horses etc).
+-City states now have a choice among 5 luxuries on standard instead of 3
+-Less disabled luxuries per map (none on standard size)
+-Mount Fuji can now appear on pangeas
+-A bit more randomness in luxuries (more randoms, less of those dedicated to a region)
+-A bit more ruins
+
+Bug fixes

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 4/6/2016 5:25:45 PM -->
+<GameData>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_COTHON</Type>
+			<BuildingClass>BUILDINGCLASS_HARBOR</BuildingClass>
+			<Cost>120</Cost>
+			<GoldMaintenance>0</GoldMaintenance>
+			<Help>TXT_KEY_BUILDING_COTHON_HELP</Help>
+			<Description>TXT_KEY_BUILDING_COTHON</Description>
+			<Civilopedia>TXT_KEY_BUILDING_COTHON_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_COTHON_STRATEGY</Strategy>
+			<ArtDefineTag>HARBOR</ArtDefineTag>
+			<Water>true</Water>
+			<MinAreaSize>10</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>25</HurryCostModifier>
+			<ArtInfoEraVariation>true</ArtInfoEraVariation>
+			<DisplayPosition>16</DisplayPosition>
+			<AllowsWaterRoutes>true</AllowsWaterRoutes>
+			<TradeRouteSeaDistanceModifier>50</TradeRouteSeaDistanceModifier>
+			<TradeRouteSeaGoldBonus>200</TradeRouteSeaGoldBonus>
+			<IconAtlas>AMB_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+		<Row>
+			<Type>BUILDING_FORUM</Type>
+			<BuildingClass>BUILDINGCLASS_AMPHITHEATER</BuildingClass>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
+			<Cost>100</Cost>
+			<GoldMaintenance>0</GoldMaintenance>
+			<PrereqTech>TECH_DRAMA</PrereqTech>
+			<Description>TXT_KEY_BUILDING_FORUM</Description>
+			<Civilopedia>TXT_KEY_BUILDING_FORUM_PEDIA</Civilopedia>
+			<Help>TXT_KEY_BUILDING_FORUM_HELP</Help>
+			<Strategy>TXT_KEY_BUILDING_FORUM_STRATEGY</Strategy>
+			<ArtDefineTag>COLESSEUM</ArtDefineTag>
+			<GreatWorkSlotType>GREAT_WORK_SLOT_LITERATURE</GreatWorkSlotType>
+			<GreatWorkCount>1</GreatWorkCount>
+			<GreatPeopleRateModifier>25</GreatPeopleRateModifier>
+			<ConquestProb>100</ConquestProb>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>25</HurryCostModifier>
+			<IconAtlas>AMB_ATLAS</IconAtlas>
+			<PortraitIndex>1</PortraitIndex>
+		</Row>
+	</Buildings>
+</GameData>

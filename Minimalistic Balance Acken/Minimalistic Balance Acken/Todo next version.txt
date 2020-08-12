@@ -1,0 +1,33 @@
+White peace can still happen. What has been fixed is that it is the bug making it always available. If the AI is stuck in a war with you and refuses to make peace it can be annoying yes. It's probably something I'll look into to increase its likelihood of making peace if it gets nothing done for a good number of turns.
+
+The windmill "revolution" need to be update on the cyclopedia (Still said not buildable on hill)
+Anyone actually like the fact that triplanes only get 50% chance intercept? I, for one, think it's incredibly stupid. Why should my army be getting pounded by great war bombers (fictional units) when I have a whole fleet of triplanes sitting on intercept that aren't doing anything? It makes no sense for game balance... and for historical accuracy it's laughable as well (since there were no bombers that did anything relevant in WW1) I think triplanes should get 100% intercept, or the interceptor promotion should bring it up to 100%, at the very least.
+One bug: the Reformation social policy isn't giving gold, production nor golden age points when you buy a Great Prophet.
+
+-More work into Casus Belli logic
+-Rebalance coastal combat (range vs naval)
+-Faith Healer pantheon may be changed into free medic promotion
+
+Discussion and various PM from testers:
+-**BNW is designed so that most victories are late in the tech tree which means that science will be a really high priority for fast victories. It is outside the scope of this mod to change that.
+However you can still nerf rationalism a bit more or add some science in competing trees. If, for instance, trade post science was in commerce that would be a huge change.
+-If you want to change the tech tree I suggest you aim to make more routes competitive by removing prerequisitess and moving units away from the science techs. I would remove: Theology ? Compass, Printing Press ? Metallurgy, Economics ? Rifling , Scientific method ? Steam Power. 
+-Yet another idea could be to change how they impact CSes. Bomb your CM on a cultural CS and get influence + gold + a solid raw CS income
+=> say 100 turn worth of an ally CS, that could scale from 600 to 1.8/2k culture\faith , or 300/400 Golden Age point from a mercantile CS, or maybe 4 insta free of maintenance units from a CS, could even work for food from maritimes for quick buff in cities population.
+=> Those could make merchants pretty solid as they would be pretty usefull in any situation ! Which money is supposed to be.
+- Pikeman not upgrading to lancers (although they are much better now). 
+- Ranged horse units not upgrading to melee unit
+-Alternatively it could be planted to produce permanent extra happiness. So planting a customs house/manor could give you a 4 food, 10 gold, 4 happiness tile as a general economy booster. 
+For CS trade missions. The best thing I think is to increase the influence point gained. The lump gold is not bad. Essentially it can be comparable to the Great Engineer rush but I think the amount of gold earned needs to increase more each era.
+-I have made a thread with some propositions for the policies, maybe you will find some ideas that you like: https://www.reddit.com/r/civ/comments/2zq40e/civ_v_rework_of_social_policies/
+-Do you plan on adjusting naval melee/ranged units in the future?
+Would it be OP to replace Terracota Army with the Pentagon effect, considering the close proximity to the Honor policy? Also, is it possible to code in a bonus to COUP chance (not rigging)? Pentagon can have it, or replace the double rigging chance in Freedom with that.
+
+By the way, do we get a casus belli if an AI attempts to conquer (or demand tribute to) a CS that's under our pledge of protection? I didn't pay attention to that, could be a good way to justify a war when playing peacefully (i.e. only defensive wars).
+
+Ideally I'd make DoF harder to get and harder to break.
+
+Ideally yes I'd like more cooperation from the AI. It's not an easy task though so it's on my to do list for now.
+
+Acken -- btw, when Monte takes Honor, he seems to be getting double culture from the barb kills, like he would in the base game, not 150%.
+Verify Commerce Merchant dynasty.

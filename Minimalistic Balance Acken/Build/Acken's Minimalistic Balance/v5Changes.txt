@@ -1,0 +1,80 @@
+Units and Warfare:
+-Pikeman is now back to 90 cost
+-Sword strength is 15 and cost 75 instead of 16 cost 80
+-Trireme cost has been increased to 60
+
+Policies
+-Creative expression (+1 culture for each GW) has been replaced by Free Expression (+1 science for specialists)
+-Theocracy gives +2 gold to shrine and +15% to temples instead of +1 shrine +20% temple
+-Mercantilism reduces buying costs by 15% instead of 25%
+
+Buildings:
+-The statue of Zeus now has a new additional effect, it reduces by half the resistance time of a newly conquered city.
+-The national college no longer provide a scientist slot
+-The national college provides +4 science and +25% science instead of +30% science
+-Stock exchange now has only 1 slot
+-Factory now has only 1 slot
+-Workshop now has 2 slots
+-Market now has 2 slots
+-Market, bank and stock exchange give one more gold but the % modifier has been reduced to 15%
+-Big Ben reduces buying costs by 10% instead of 15%
+-The building cost of the National Epic, Heroic Epic, East India Company and NIA have been reduced by 40.
+-The national epic now gives +4 culture instead of +3 culture (and still gives +25% GPP).
+
+Religion:
+-Prophets are no longer random
+
+Misc:
+-LumberMills can be made in Jungles
+-Shrines no longer cost maintenance but monuments now do again
+-The tech exponent for city strength is no longer reduced
+-The growth cost exponent is 1.4 instead of 1.35 (original is 1.5)
+-Forts build time has been reduced from 800 to 600
+-Trading posts have been significantly changed:
+TP are available at The Wheel
+TP give +1 gold at Currency
+TP give +1 gold at Economics
+TP can only be built adjacent to a luxury.
+-The formula for costs is no longer (P*30)^0.75 but (P*8)^0.88.
+In other words, the early stuff cost less money and the late game stuff cost more.
+
+Map (BETA) :
+-NQMap has been "removed".
+-Rework of the map generator functions, inspired or copied from NQMap :
+There should be less bugs with the map scripts and I've also modified things to my liking.
+Maps are more generous than the base game in amount of ressources and luxuries (for everybody).
+Starting position should rarely be bad
+Less jungles
+Strategic balance always gives horses iron coal and oil
+-Two new mapscripts AMBalance Continents and AMBalance Pangea which are modified from NQPangea:
+More land (5% more land on standard) and sea levels have a bigger impact (58%, 66%, 74% amount of water tiles respectively).
+Less mountains on 4B and 5B and less chains, more scattered
+Islands in both scripts
+There is a smoothness parameter which is set at high by default and will create a very "round" pangea in one big lump. If set at low it will create a more sinuous Pangea or continents.
+There are two parameters for islands, numbers and size.
+The mapscript avoids creating choke points for the Pangea script
+
+AI:
+-Reduced likelihood of the AI taking godess of protection
+-The AI should offer a white peace if it has been at war for 20 turns without any unit lost and 40 turns without any city lost (from either side). (BETA)
+-The AI should look at its overall score and modify its attitude a bit based on it, more friendly with low score civs and less friendly with high score civs.
+-The AI should value a DoF a bit more before betraying and denouncing
+
+Civilizations:
+-Carthage
+The African elephant now costs the same as the other horsemen UU (75) instead of 100
+Carthage gets a special free harbor in every cities called the Cothon which gives +2 gold to every sea tiles instead of +1.
+Carthage gets the same priority coastal bias as Venice
+Quinquireme strength reduced by 1 (now 14)
+Note that the Quinquireme got buffed with the Trireme making it already a very powerful early unit.
+-Rome
+The Legion strength was reduced by 1 (now 17).
+The Balista was removed.
+Rome now has a unique Amphitheater called the Forum costing no maintenance and giving +25% GPP.
+Rome UA now gives +10% building production and +15% production for buildings already existing in Capital.
+-Korea's UA only gives +1 science to specialists.
+
+To do:
+-Better AI diplomacy and coallitions, weak AIs more likely to form alliances against leaders.
+-Rework great improvements ?
+-Rework of or additional Reformation beliefs to make picking one early more attractive.

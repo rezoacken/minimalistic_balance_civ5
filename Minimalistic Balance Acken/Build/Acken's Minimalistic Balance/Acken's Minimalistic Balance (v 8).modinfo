@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="65793c73-65eb-47d1-822b-0d1ff3eeff3e" version="8">
+  <Properties>
+    <Name>Acken's Minimalistic Balance</Name>
+    <Teaser>Rebalances many aspects of the game and improves AI.</Teaser>
+    <Description>DESCRIPTION 
+for Singleplayer and AI improvements. 
+[NEWLINE][NEWLINE]
+This mod includes a partial integration of Artificial Unintelligence and also includes the NQMapscript. 
+[NEWLINE][NEWLINE]
+Version 8
+[NEWLINE][NEWLINE]
+V8 Main improvements:[NEWLINE]
+Balance changes
+[NEWLINE][NEWLINE]
+This mod rebalances many aspects of the game with a minimalistic approach. It will feel like the same game, with mechanics untouched but with a lot of subtle changes that rebalance things and provide additional, usualy neglected, options. 
+[NEWLINE][NEWLINE]
+The mod also works on the AI and improves it in multiple way. The AI is (a bit) smarter but also more opportunistic and agressive. Some changes have been done to warmongering AI opinions and reckless expander. 
+[NEWLINE][NEWLINE]
+Most of the changes are made with a singleplayer frame and this is probably the best way to enjoy the mod. Some bugs have also been fixed (center tile not working, white peace bug). 
+[NEWLINE][NEWLINE]
+Note that this mod increases the difficulty of the game. The combination of nerfs, buffs, bug fixes, AI improvements and agressiveness will make your experience harder. If you are looking for a mod diminishing the difficulty this is not it. However if some mechanics always frustrated you like the inefficiency of wide empires or early warmongering hate, you will like this. 
+[NEWLINE][NEWLINE]
+For the full list of changes, videos and discussions please visit Civfanatics.com ! 
+http://forums.civfanatics.com/showthread.php?t=550671 
+[NEWLINE][NEWLINE]
+The mod changes the following aspects of the game: [NEWLINE]
+-AI. Through the (in progress) implementation of Artificial Unintelligence and some adjustments made by myself the AI should be once again a force to reckon with. [NEWLINE]
+-Culture acquisition has been changed and you should have a bit more policies to play with throughout the game. [NEWLINE]
+-Wide game is less punishing while still trying to maintain some efficiency of tall empires. [NEWLINE]
+-Warfare is more volatile and melee units make a comeback ! Warring is rewarding, more diverse and will punish undefended territories. [NEWLINE]
+-Policies and ideologies have been revamped to improve balance between them. No longer feel obligated to play a boring 4 city Tradition into Secularism and explore more options to help you to victory. [NEWLINE]
+-The tech progression is now a lot smoother reducing the big jumps in the mid games. Games should take a bit longer to complete and make the Renaissance+ eras more interesting. [NEWLINE]
+-The religion beliefs have been rebalanced [NEWLINE]
+-Buildings and wonders have been rebalanced[NEWLINE]
+-Techs have been rebalanced[NEWLINE]
+-A new difficulty level between Immortal and Deity [NEWLINE]
+-Many more small changes (details below in video and spoiler tag). [NEWLINE][NEWLINE]
+Big thanks to Whoward (PickNMix mod), Delnar_Ersike (Artificial Unintelligence), Fruitstrike (NQMod) and HellBlazer (NQMapScript) for their work on their respective mods from which I took some parts. [NEWLINE]
+[NEWLINE]
+Compatibility: [NEWLINE]
+Enhanced User Interface should be 100% compatible. [NEWLINE]
+[NEWLINE]
+It is suggested to use this mod as a standalone, with a minimum of other mods for the best experience. This is a mod designed for balancing the game while staying close to the original game after all ! 
+However, simple XML/LUA mods should still be compatible with it (extra civs, extra units, buildings, UI stuff etc) but I cannot guarantee they'll fit in since they are likely balanced for the base game or may simply be unbalanced to begin with. [NEWLINE]
+Note that this mod changes the DLL so any mod also changing the DLL will not be compatible. [NEWLINE]
+[NEWLINE]
+I may try to extend compatibility in the future but this is not the most pressing thing on my schedule</Description>
+    <Authors>Acken</Authors>
+    <SpecialThanks>Fruitstrike, Delnar_Ersike, Whoward, HellBlazer, Wodhann, You &lt;3</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>6</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Dlc id="6DA07636-4123-4018-B643-6575B4EC336B" minversion="0" maxversion="999" />
+  </Dependencies>
+  <References />
+  <Blocks>
+    <Mod id="917a39f3-57f0-4b18-b3cb-c4b7dbfbb41e" minversion="0" maxversion="999" title="No Quitters Mod" />
+  </Blocks>
+  <Files>
+    <File md5="D89EAE16E7F8C6409C489C9944C86FB1" import="0">AI/Diplomacy.sql</File>
+    <File md5="A2AE8EDE5027044B768603CE24660DB8" import="0">AI/Economy.sql</File>
+    <File md5="25285E1B3B61C8C065EAAC67FA0D6C05" import="0">AI/EconomicStrategies.sql</File>
+    <File md5="B498236068647152C4786D708D8A1FDF" import="0">AI/ExtraTexts.sql</File>
+    <File md5="AC2760EAD27DB78911260FEFAF01F392" import="0">AI/Difficulties.xml</File>
+    <File md5="F7B5D265A2F7191F3BA9CB82F0C01751" import="0">AI/GrandStrategy.sql</File>
+    <File md5="B1FFDA78628E2911C3244BECFBE2EFDC" import="0">AI/Flavors.sql</File>
+    <File md5="63349A228FBFAAB49D51D2F1E912383E" import="0">AI/NewAIGlobals.sql</File>
+    <File md5="7DE4EA99FE4DB827098FAA0745C4A39B" import="0">AI/UnitsFlavor.sql</File>
+    <File md5="20E4D683467578CDDAE85AE2D82A4ACD" import="0">AI/PolicyFlavors.sql</File>
+    <File md5="1D9D207177695950C751677C46E32104" import="0">AI/Handicaps.sql</File>
+    <File md5="9B5AA4B817664A1BE7FFE97874240BBA" import="1">Art/AMB128.dds</File>
+    <File md5="6E2F4641C7775373829B6CC1725CACEF" import="1">Art/AMB256.dds</File>
+    <File md5="DDA507DEFB86378A15C434BD58A98E43" import="1">Art/AMB45.dds</File>
+    <File md5="8BAC76CE06D5E72D9EF086AFA5C54873" import="1">Art/AMB64.dds</File>
+    <File md5="DB542B267AE885BD19597D8B4021A291" import="0">Combat changes/Cities.sql</File>
+    <File md5="BAB30161F7B06586F6153EAAC57F1479" import="0">Combat changes/Promotions.sql</File>
+    <File md5="B27C2F92508270973BEA94A2469A6CAC" import="0">Combat changes/Units.sql</File>
+    <File md5="A702F738DF8743610782BF1EFD60136D" import="0">Culture changes/BuildingsCulture.sql</File>
+    <File md5="D2D391883EF08DA78E882CA8F4B5250A" import="0">Culture changes/Globaldefines.sql</File>
+    <File md5="A41790354DAE4CE6F33E89B1C91AD7B5" import="1">CvGameCore_Expansion2.dll</File>
+    <File md5="E8F6CFAE1BDB304F775DE28440792EC1" import="0">AlteredTables.sql</File>
+    <File md5="A9FBFDC91EBA55B2498D7FF58CBAC1A2" import="1">CvGameCore_Expansion2.pdb</File>
+    <File md5="8389F2297D04D09BB2A373CF3537FCEB" import="0">ExtraArts.xml</File>
+    <File md5="ABD5FA5416A63C4E062E3F9113215550" import="1">Imported/ART/YieldAtlas_128_Tourism.dds</File>
+    <File md5="B1C2E8D070A6676AB523D8E7D760B93F" import="0">Imported/DB/API/UnifiedYields.sql</File>
+    <File md5="25E9CB173F11561AFCE4DDF0C12676F2" import="0">Imported/DB/API/UnifiedYields.xml</File>
+    <File md5="AB5850481219B829A7C9B7F7D32AF80D" import="0">Imported/DB/API/UnifiedYieldsTourism.xml</File>
+    <File md5="8AD0348E5829D4FC421DCF5617B72DB7" import="0">Imported/New_CIV5AIMilitaryStrategies.xml</File>
+    <File md5="3D234DBBDDE3744C557EB1302A3E6464" import="0">Imported/New_CIV5MultiUnitFormations.xml</File>
+    <File md5="A14F8E576AC5C0DE7AA3C4B9F0362D5E" import="0">Imported/New_CIV5TacticalMoves.xml</File>
+    <File md5="E051986AC6BA67773E722232FA8A8C35" import="0">Imported/New_CIV5Units.xml</File>
+    <File md5="645CEB474DDC063B275E0E1C0833B64B" import="0">Imported/New_GlobalAIDefines.xml</File>
+    <File md5="5A87219957975A85A1D3CEDA1D98A835" import="0">Imported/UI/InGame/YieldIconManager.lua</File>
+    <File md5="8FD4EF5AAB5BD6E16DB8EBE95963FC33" import="0">Imported/UI/InGame/YieldIconManager.xml</File>
+    <File md5="B3B353A55F47AAE9D3E2762489A6DB82" import="0">Minimalistic Balance.txt</File>
+    <File md5="2A97838E13EDA055BD7837ECB96AC65F" import="0">Miscelenaous/Civilizations.sql</File>
+    <File md5="71A13A1C25B6BC21E0A8A06F515A248B" import="0">Miscelenaous/CostChanges.sql</File>
+    <File md5="B960C042BB64C3ADBBCA3F936A3A561C" import="0">Miscelenaous/NewBuildings.xml</File>
+    <File md5="EB03210337876775EB31324EAACD3051" import="0">Miscelenaous/Map/AMBPangea.lua</File>
+    <File md5="5AFD57D1A288B2DBDFA4528383719E86" import="1">Miscelenaous/Map/AssignStartingPlots.lua</File>
+    <File md5="6E05433035EF6520A9AB2755B04B637C" import="0">Miscelenaous/Map/AMBContinents.lua</File>
+    <File md5="6B9388010648C089DDBEC78CAB1758DB" import="1">Miscelenaous/Map/FeatureGenerator.lua</File>
+    <File md5="584D8120A7E9C34E5679BE162BD18CEE" import="1">Miscelenaous/Map/FractalWorld.lua</File>
+    <File md5="69040ECE38ECE413848718E1E2F3C7FC" import="1">Miscelenaous/Map/MapGenerator.lua</File>
+    <File md5="AF997E7EEA6F0BF723B11360F4E9B69D" import="1">Miscelenaous/Map/MapmakerUtilities.lua</File>
+    <File md5="7EEA0741FD0C312F04DA1E5A2A003541" import="0">Miscelenaous/Translations/FrenchTexts.sql</File>
+    <File md5="254637278E4A0312909726E534F440D0" import="0">Miscelenaous/Translations/JapaneseTexts.sql</File>
+    <File md5="B06EB74BF9719004F4D3C7B9CEA1F68B" import="0">Miscelenaous/NaturalWonders.sql</File>
+    <File md5="6C2CC4CBF869A58E9FB52E9A13EB6AC3" import="0">Miscelenaous/Improvements.sql</File>
+    <File md5="2C11C3E2964B1BC71C8FB7344F29EAD2" import="0">Miscelenaous/Misc.sql</File>
+    <File md5="CBAAEF6EE1CB7AD3E731D0D55989E827" import="0">Miscelenaous/Wonders_Buildings.sql</File>
+    <File md5="BCDBF37CE7549D0B5FB73830C68266B1" import="0">Policies/AddedTables.xml</File>
+    <File md5="58F9F9CA13988938062230EE5523124A" import="0">Policies/Aesthetics.sql</File>
+    <File md5="4B707242AC3CE21A332B4E6672AB8155" import="0">Policies/Commerce.sql</File>
+    <File md5="6433B5678109428819F7D3D856E860AA" import="0">Policies/Exploration.sql</File>
+    <File md5="42D24065816E6948584F80CB11EA79D9" import="0">Policies/ExplorationFinisherPromotion.xml</File>
+    <File md5="6697131107B412DAEFF2258C0E0ACB25" import="0">Policies/Exploration.xml</File>
+    <File md5="3546322AED687231AB7669B9C2F03B7D" import="0">Policies/Ideologies.sql</File>
+    <File md5="214B791EEF1F60E6B56E119676C47720" import="0">Policies/Exploration.lua</File>
+    <File md5="912A8AC1ABE5EB526295A80E8F043451" import="0">Policies/Patronage.sql</File>
+    <File md5="EC4B167F20DA3BEC4C6E86B0CE5B9068" import="0">Policies/Piety.sql</File>
+    <File md5="8BBEC1F74E170F7703FD61CCF198A2AB" import="0">Policies/Honor.sql</File>
+    <File md5="AF41F2FFD753E5450939898E69C46A3A" import="0">Policies/Liberty.sql</File>
+    <File md5="0723A5AD7D0E344031003C29C4121545" import="0">Policies/Rationalism.sql</File>
+    <File md5="250294C5B2E55896A7C3F22871F44F53" import="0">Policies/Texts.xml</File>
+    <File md5="84B503D4926039320C8652CEE92092C5" import="0">Policies/Tradition.sql</File>
+    <File md5="95A45B79A2B7963CAF75F39A97FC871A" import="0">Religion/FaithCosts.sql</File>
+    <File md5="1F2CF958CCD76897A2AAC6C73CBB1F1F" import="0">Religion/Beliefs.sql</File>
+    <File md5="9FED14ABA21B116DA16334E6FF30ECB8" import="0">Science changes/BuildingsScience.sql</File>
+    <File md5="73BB0BBB11F4DEE3F0E09CF1F9159EEF" import="0">Science changes/Technologies.sql</File>
+    <File md5="65A04696EAF3D55AB9BF32580672B26F" import="0">Science changes/Techs.sql</File>
+    <File md5="4C8E3C9F8F42B31A401764E848C168F2" import="0">v8.1Changes.txt</File>
+    <File md5="EE91134C33EAADC53696FC95828AEC87" import="0">v8Changes.txt</File>
+    <File md5="4311CD8B1CAF2DD6DEC13551046511C7" import="0">v7Changes.txt</File>
+    <File md5="BE4921DCA12A6F09D9D04F26F19BDDE5" import="0">v6Changes.txt</File>
+    <File md5="86EFD838CD23FED2AD7EBB94B2C84304" import="0">v5Changes.txt</File>
+    <File md5="9C1D26D278BF3AB2B1CB36E402CD2D25" import="0">v4Changes.txt</File>
+    <File md5="4D086309418665D005F992AA752BB23D" import="0">Todo next version.txt</File>
+    <File md5="96012A7CC5FACD4ADFC6A3B380284314" import="0">Wide game changes/Maintenance.sql</File>
+    <File md5="7AD4FA7761483DE3387A42A8DEDCBDEF" import="0">Wide game changes/National Wonders.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>AlteredTables.sql</UpdateDatabase>
+      <UpdateDatabase>ExtraArts.xml</UpdateDatabase>
+      <UpdateDatabase>AI/Difficulties.xml</UpdateDatabase>
+      <UpdateDatabase>Imported/DB/API/UnifiedYields.xml</UpdateDatabase>
+      <UpdateDatabase>Imported/DB/API/UnifiedYields.sql</UpdateDatabase>
+      <UpdateDatabase>Imported/DB/API/UnifiedYieldsTourism.xml</UpdateDatabase>
+      <UpdateDatabase>Imported/New_CIV5AIMilitaryStrategies.xml</UpdateDatabase>
+      <UpdateDatabase>Imported/New_CIV5MultiUnitFormations.xml</UpdateDatabase>
+      <UpdateDatabase>Imported/New_CIV5TacticalMoves.xml</UpdateDatabase>
+      <UpdateDatabase>Imported/New_CIV5Units.xml</UpdateDatabase>
+      <UpdateDatabase>Imported/New_GlobalAIDefines.xml</UpdateDatabase>
+      <UpdateDatabase>Policies/AddedTables.xml</UpdateDatabase>
+      <UpdateDatabase>AI/Diplomacy.sql</UpdateDatabase>
+      <UpdateDatabase>AI/EconomicStrategies.sql</UpdateDatabase>
+      <UpdateDatabase>AI/Economy.sql</UpdateDatabase>
+      <UpdateDatabase>AI/ExtraTexts.sql</UpdateDatabase>
+      <UpdateDatabase>AI/Flavors.sql</UpdateDatabase>
+      <UpdateDatabase>AI/GrandStrategy.sql</UpdateDatabase>
+      <UpdateDatabase>AI/Handicaps.sql</UpdateDatabase>
+      <UpdateDatabase>AI/NewAIGlobals.sql</UpdateDatabase>
+      <UpdateDatabase>AI/PolicyFlavors.sql</UpdateDatabase>
+      <UpdateDatabase>AI/UnitsFlavor.sql</UpdateDatabase>
+      <UpdateDatabase>Combat changes/Cities.sql</UpdateDatabase>
+      <UpdateDatabase>Combat changes/Promotions.sql</UpdateDatabase>
+      <UpdateDatabase>Combat changes/Units.sql</UpdateDatabase>
+      <UpdateDatabase>Culture changes/BuildingsCulture.sql</UpdateDatabase>
+      <UpdateDatabase>Culture changes/Globaldefines.sql</UpdateDatabase>
+      <UpdateDatabase>Miscelenaous/NewBuildings.xml</UpdateDatabase>
+      <UpdateDatabase>Miscelenaous/Civilizations.sql</UpdateDatabase>
+      <UpdateDatabase>Miscelenaous/Improvements.sql</UpdateDatabase>
+      <UpdateDatabase>Miscelenaous/Misc.sql</UpdateDatabase>
+      <UpdateDatabase>Miscelenaous/NaturalWonders.sql</UpdateDatabase>
+      <UpdateDatabase>Miscelenaous/Wonders_Buildings.sql</UpdateDatabase>
+      <UpdateDatabase>Policies/Aesthetics.sql</UpdateDatabase>
+      <UpdateDatabase>Policies/Honor.sql</UpdateDatabase>
+      <UpdateDatabase>Policies/Liberty.sql</UpdateDatabase>
+      <UpdateDatabase>Policies/Patronage.sql</UpdateDatabase>
+      <UpdateDatabase>Policies/Piety.sql</UpdateDatabase>
+      <UpdateDatabase>Policies/Rationalism.sql</UpdateDatabase>
+      <UpdateDatabase>Policies/Texts.xml</UpdateDatabase>
+      <UpdateDatabase>Policies/Tradition.sql</UpdateDatabase>
+      <UpdateDatabase>Policies/Commerce.sql</UpdateDatabase>
+      <UpdateDatabase>Policies/Ideologies.sql</UpdateDatabase>
+      <UpdateDatabase>Policies/Exploration.xml</UpdateDatabase>
+      <UpdateDatabase>Policies/ExplorationFinisherPromotion.xml</UpdateDatabase>
+      <UpdateDatabase>Policies/Exploration.sql</UpdateDatabase>
+      <UpdateDatabase>Religion/Beliefs.sql</UpdateDatabase>
+      <UpdateDatabase>Religion/FaithCosts.sql</UpdateDatabase>
+      <UpdateDatabase>Science changes/BuildingsScience.sql</UpdateDatabase>
+      <UpdateDatabase>Science changes/Technologies.sql</UpdateDatabase>
+      <UpdateDatabase>Science changes/Techs.sql</UpdateDatabase>
+      <UpdateDatabase>Wide game changes/Maintenance.sql</UpdateDatabase>
+      <UpdateDatabase>Wide game changes/National Wonders.sql</UpdateDatabase>
+      <UpdateDatabase>Miscelenaous/CostChanges.sql</UpdateDatabase>
+      <UpdateDatabase>Miscelenaous/Translations/JapaneseTexts.sql</UpdateDatabase>
+      <UpdateDatabase>Miscelenaous/Translations/FrenchTexts.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="MapScript" file="Miscelenaous/Map/AMBPangea.lua">
+      <Name>Amb Pangea</Name>
+      <Description>Balance mod pangea</Description>
+    </EntryPoint>
+    <EntryPoint type="MapScript" file="Miscelenaous/Map/AMBContinents.lua">
+      <Name>Amb Continents</Name>
+      <Description>Balance mod continents</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Policies/Exploration.lua">
+      <Name>Exploration</Name>
+      <Description>Colonies and TreasureFleets</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

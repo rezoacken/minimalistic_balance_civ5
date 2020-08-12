@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "Minimalistic Balance Acken", "Minimalistic Balance Acken\Minimalistic Balance Acken.civ5proj", "{67A12FAE-0A14-4246-9F73-0355145D3F07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67A12FAE-0A14-4246-9F73-0355145D3F07}.Default|x86.ActiveCfg = Default|x86
+		{67A12FAE-0A14-4246-9F73-0355145D3F07}.Default|x86.Build.0 = Default|x86
+		{67A12FAE-0A14-4246-9F73-0355145D3F07}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{67A12FAE-0A14-4246-9F73-0355145D3F07}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{67A12FAE-0A14-4246-9F73-0355145D3F07}.Package Only|x86.ActiveCfg = Package Only|x86
+		{67A12FAE-0A14-4246-9F73-0355145D3F07}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
